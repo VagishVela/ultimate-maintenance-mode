@@ -70,7 +70,7 @@ if(empty($comingsoon_headline)){
 		<?php endif; ?>
 	  </div>
 	  <div class="modal-body">
-	    <?php echo wpautop($msg); ?>
+	    <?php echo wpautop(do_shortcode($msg)); ?>
 	  </div>
 	    <?php if($seedprod_maintenancemode_options['comingsoon_footer_credit']){ 
 	    if(!empty($seedprod_maintenancemode_options['comingsoon_affiliate_id']) && is_numeric($seedprod_maintenancemode_options['comingsoon_affiliate_id'])){
